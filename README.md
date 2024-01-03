@@ -15,11 +15,15 @@ For Linux, you can install pip using the following commands:
 sudo apt update
 sudo apt install python-pip
 pip --version
+```
 
 ## Speed Test Script
 ```bash
 python3 speed_test.py
+```
 
 ## Telnet Script
 ```bash
 python3 telnet.py
+```
+
