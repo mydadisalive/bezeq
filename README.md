@@ -14,7 +14,7 @@ For Linux, you can install pip using the following commands:
 
 ```bash
 sudo apt update
-sudo apt install python-pip
+sudo apt install python3-pip
 pip --version
 ```
 
