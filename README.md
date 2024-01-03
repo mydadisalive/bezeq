@@ -8,6 +8,7 @@ Before running the scripts, make sure you have the following:
 
 - Python installed on your system
 - pip package manager
+- speedtest-cli package
 
 For Linux, you can install pip using the following commands:
 
@@ -15,6 +16,12 @@ For Linux, you can install pip using the following commands:
 sudo apt update
 sudo apt install python-pip
 pip --version
+```
+
+To install the speedtest-cli module:
+
+```bash
+pip3 install speedtest-cli
 ```
 
 ## Speed Test Script
