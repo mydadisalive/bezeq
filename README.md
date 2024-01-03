@@ -1,11 +1,17 @@
-sudo apt update  # (for Linux)
+# Speed Test and Telnet Scripts
 
-sudo apt install python-pip  # (for Linux)
+This repository contains Python scripts for conducting speed tests and working with Telnet.
 
-pip --version  # (for Linux)
+## Prerequisites
 
-pip3 install speedtest-cli
+Before running the scripts, make sure you have the following:
 
-python3 speed_test.py
+- Python installed on your system
+- pip package manager
 
-python3 telnet.py
+For Linux, you can install pip using the following commands:
+
+```bash
+sudo apt update
+sudo apt install python-pip
+pip --version
