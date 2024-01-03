@@ -6,6 +6,8 @@ hostname = '34.118.241.118'
 port = 23  # Default Telnet port is 23
 
 try:
+    print(f"=== Connecting to the Telnet server at {hostname}:{port}... ===")
+
     # Connect to the Telnet server
     tn = telnetlib.Telnet(hostname, port)
 
@@ -17,8 +19,7 @@ try:
     tn.write(b"123456\n")
 
     # Perform other Telnet interactions as needed
-    tn.write(b"touch 1 2 3\n")
-    tn.write(b"ls\n")
+    tn.write(b"touch 1 2 3; ls\n")
 
     # Wait for a short period to allow data to be received
     time.sleep(1)
@@ -26,6 +27,9 @@ try:
     # Read the response
     response = tn.read_very_eager()
     print(response.decode('utf-8'))
+
+    print(f"=== Disonnecting from the Telnet server at {hostname}:{port}... ===")
+
 
 except Exception as e:
     print(f"Error: {e}")

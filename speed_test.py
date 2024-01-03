@@ -32,4 +32,4 @@ def run_speedtest_and_log_to_csv():
 # Run the script for 5 iterations with a 60-second delay
 for i in range(5):
     run_speedtest_and_log_to_csv()
-    time.sleep(60)
+    time.sleep(5)
